@@ -16,7 +16,7 @@ const sequelize = new Sequelize(
       updatedAt: 'updated_at',
       deletedAt: 'deleted_at',
       // 字段以下划线（_）来分割（默认是驼峰命名风格）
-      // underscored: true,
+      underscored: true,
       // freezeTableName: true,
     },
   }
