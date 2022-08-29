@@ -1,6 +1,6 @@
 import { Model, Table, Column } from 'sequelize-typescript';
 
-@Table
+@Table({ tableName: 'user' })
 export default class User extends Model {
   @Column
   name!: string; // 姓名
@@ -12,5 +12,4 @@ export default class User extends Model {
   password!: string; // 密码
   @Column
   age!: number; // 年龄
-};
-
+}
