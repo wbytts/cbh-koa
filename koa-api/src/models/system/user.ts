@@ -3,7 +3,7 @@ import { Model, Table, Column } from 'sequelize-typescript';
 @Table({ tableName: 'user' })
 export default class User extends Model {
   @Column
-  name!: string; // 姓名
+  name!: string; // 姓名1
 
   @Column({ field: 'user_code' })
   userCode!: string;
